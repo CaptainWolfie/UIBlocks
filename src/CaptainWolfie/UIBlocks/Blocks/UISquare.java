@@ -140,6 +140,8 @@ public class UISquare {
 	
 	public static void deleteSquare(UISquare square) {
 		squares.remove(square);
+		square = null;
+		Runtime.getRuntime().gc();
 	}
 	
 	public static void renderSquares(Graphics g) {

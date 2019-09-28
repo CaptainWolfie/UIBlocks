@@ -23,14 +23,14 @@ public class Test implements KeyListener {
 	
 	@SuppressWarnings("static-access")
 	public Test() {
-		createFrame("hi");
+		createFrame("UIBlocks Test");
 		UIMain main = new UIMain();
 		main.init(frame);
 		UISquare square = UISquare.createSquare(UIColor.DARK_GRAY, 10);
 		square.setX(new UILocation(.5f));
 		square.setY(new UILocation(10));
 		square.setSize(new UIDimension(100, 100));
-		square.setEffect(UIEffects.RIGHT_TO_LEFT, 100, 1);
+		square.setEffect(UIEffects.RIGHT_TO_LEFT, 1000, 1);
 		while (true) {
 			if (done)
 				square.setVisible(false);
@@ -42,9 +42,9 @@ public class Test implements KeyListener {
 	}
 	
 	
-	/*public static void main(String[] args) {
+	public static void main(String[] args) {
 		new Test();
-	}*/
+	}
 	
 	private BufferStrategy bs = null;
 	private Graphics g;
